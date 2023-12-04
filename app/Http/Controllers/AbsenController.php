@@ -34,7 +34,9 @@ class AbsenController extends Controller
      */
     public function store(StoreAbsenRequest $request)
     {
-        //
+        dd($request->all());
+        // Arsip::create($request->input());
+        // return back()->with('berhasil', 'Data berhasil ditambahkan!');
     }
 
     /**

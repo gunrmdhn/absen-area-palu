@@ -11,8 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('absens', function (Blueprint $table) {
+        Schema::create('tabel_absen', function (Blueprint $table) {
             $table->id();
+            $table->string('departemen');
+            $table->string('nama');
+            $table->string('no_id');
+            $table->string('tanggal_waktu');
+            $table->string('status');
             $table->timestamps();
         });
     }
@@ -22,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('absens');
+        Schema::dropIfExists('tabel_absen');
     }
 };

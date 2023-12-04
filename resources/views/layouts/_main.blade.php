@@ -5,6 +5,7 @@
 
 <body>
     @include('layouts/_nav')
+    @include('layouts/_alert')
     <main class="container">
         <div class="my-lg-4 my-4">
             <h3 class="text-center">

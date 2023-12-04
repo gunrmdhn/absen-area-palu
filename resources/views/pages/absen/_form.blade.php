@@ -1,11 +1,11 @@
 @csrf
-<div class="col-lg-12">
-    <label for="bulan" class="form-label">Bulan</label>
-    <input type="month" value="{{ old('bulan') }}" @class([
+<div class="col-lg-6">
+    <label for="bulan_tahun" class="form-label">Bulan / Tahun</label>
+    <input type="month" value="{{ old('bulan_tahun') }}" @class([
         'form-control',
         'rounded-0',
-        'is-invalid' => $errors->has('bulan'),
-    ]) id="bulan" name="bulan">
+        'is-invalid' => $errors->has('bulan_tahun'),
+    ]) id="bulan_tahun" name="bulan_tahun">
     {{-- <input type="month" value="{{ old('bulan', $absen->bulan) }}" @class([
             'form-control',
             'rounded-0',
@@ -13,7 +13,7 @@
         ]) id="bulan"
             name="bulan"> --}}
 </div>
-<div class="col-lg-12">
+<div class="col-lg-6">
     <label for="file" class="form-label">File</label>
     <input type="file" @class([
         'form-control',

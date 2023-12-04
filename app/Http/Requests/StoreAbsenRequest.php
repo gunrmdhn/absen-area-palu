@@ -11,7 +11,7 @@ class StoreAbsenRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,8 @@ class StoreAbsenRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'bulan_tahun' => 'required',
+            'file' => 'required|mimes:xlxs,xls',
         ];
     }
 }
